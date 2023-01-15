@@ -11,6 +11,7 @@
 		C86DC62A2973BF8A00B34DF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86DC6292973BF8A00B34DF8 /* ContentView.swift */; };
 		C86DC62C2973BF8B00B34DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86DC62B2973BF8B00B34DF8 /* Assets.xcassets */; };
 		C86DC62F2973BF8B00B34DF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86DC62E2973BF8B00B34DF8 /* Preview Assets.xcassets */; };
+		C8AAF08E29745D830000E31C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C8AAF08D29745D830000E31C /* Lottie */; };
 		C8FE62BA2973C03600FB0B7B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C8FE62B92973C03600FB0B7B /* Readme.md */; };
 		C8FE62C12973F20F00FB0B7B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62C02973F20F00FB0B7B /* Api.swift */; };
 		C8FE62C32973F40B00FB0B7B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62C22973F40B00FB0B7B /* Manager.swift */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AAF08E29745D830000E31C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +73,6 @@
 		C86DC6262973BF8A00B34DF8 /* Weatherman */ = {
 			isa = PBXGroup;
 			children = (
-				C8FE62BF2973F1CA00FB0B7B /* Animation */,
 				C8FE62BE2973F1C200FB0B7B /* ViewModels */,
 				C8FE62BD2973F1B700FB0B7B /* View */,
 				C8FE62BC2973F1A500FB0B7B /* Models */,
@@ -128,13 +129,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		C8FE62BF2973F1CA00FB0B7B /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
 		C8FE62D0297455C600FB0B7B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +152,9 @@
 			dependencies = (
 			);
 			name = Weatherman;
+			packageProductDependencies = (
+				C8AAF08D29745D830000E31C /* Lottie */,
+			);
 			productName = Weatherman;
 			productReference = C86DC6242973BF8A00B34DF8 /* Weatherman.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +183,9 @@
 				Base,
 			);
 			mainGroup = C86DC61B2973BF8A00B34DF8;
+			packageReferences = (
+				C8AAF08C29745D830000E31C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C86DC6252973BF8A00B34DF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8AAF08C29745D830000E31C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8AAF08D29745D830000E31C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8AAF08C29745D830000E31C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C86DC61C2973BF8A00B34DF8 /* Project object */;
 }
