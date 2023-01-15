@@ -32,6 +32,7 @@
 		C8AAF0D82974643D0000E31C /* daySnow.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AAF0D72974643D0000E31C /* daySnow.json */; };
 		C8AAF0DA2974649B0000E31C /* nightBrokenClouds.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AAF0D92974649B0000E31C /* nightBrokenClouds.json */; };
 		C8AAF0DC2974658D0000E31C /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAF0DB2974658D0000E31C /* MenuHeaderView.swift */; };
+		C8AAF0DE2974680B0000E31C /* CityNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAF0DD2974680B0000E31C /* CityNameView.swift */; };
 		C8FE62BA2973C03600FB0B7B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C8FE62B92973C03600FB0B7B /* Readme.md */; };
 		C8FE62C12973F20F00FB0B7B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62C02973F20F00FB0B7B /* Api.swift */; };
 		C8FE62C32973F40B00FB0B7B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62C22973F40B00FB0B7B /* Manager.swift */; };
@@ -69,6 +70,7 @@
 		C8AAF0D72974643D0000E31C /* daySnow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = daySnow.json; sourceTree = "<group>"; };
 		C8AAF0D92974649B0000E31C /* nightBrokenClouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nightBrokenClouds.json; sourceTree = "<group>"; };
 		C8AAF0DB2974658D0000E31C /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
+		C8AAF0DD2974680B0000E31C /* CityNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNameView.swift; sourceTree = "<group>"; };
 		C8FE62B92973C03600FB0B7B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		C8FE62C02973F20F00FB0B7B /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		C8FE62C22973F40B00FB0B7B /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				C8AAF08F29745DF00000E31C /* LottieView.swift */,
 				C8AAF0DB2974658D0000E31C /* MenuHeaderView.swift */,
+				C8AAF0DD2974680B0000E31C /* CityNameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				C8FE62C32973F40B00FB0B7B /* Manager.swift in Sources */,
 				C8AAF09029745DF00000E31C /* LottieView.swift in Sources */,
 				C8FE62CD2973FC7000FB0B7B /* DailyWeather.swift in Sources */,
+				C8AAF0DE2974680B0000E31C /* CityNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
