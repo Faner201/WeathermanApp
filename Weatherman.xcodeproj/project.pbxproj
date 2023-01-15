@@ -19,6 +19,7 @@
 		C8FE62C92973FC5900FB0B7B /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62C82973FC5900FB0B7B /* WeatherDetail.swift */; };
 		C8FE62CB2973FC6200FB0B7B /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62CA2973FC6200FB0B7B /* Temperature.swift */; };
 		C8FE62CD2973FC7000FB0B7B /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62CC2973FC7000FB0B7B /* DailyWeather.swift */; };
+		C8FE62CF2974098F00FB0B7B /* CityViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE62CE2974098F00FB0B7B /* CityViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C8FE62C82973FC5900FB0B7B /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		C8FE62CA2973FC6200FB0B7B /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		C8FE62CC2973FC7000FB0B7B /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
+		C8FE62CE2974098F00FB0B7B /* CityViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		C86DC61B2973BF8A00B34DF8 = {
 			isa = PBXGroup;
 			children = (
+				C8FE62D0297455C600FB0B7B /* Animation */,
 				C8FE62B92973C03600FB0B7B /* Readme.md */,
 				C86DC6262973BF8A00B34DF8 /* Weatherman */,
 				C86DC6252973BF8A00B34DF8 /* Products */,
@@ -120,11 +123,19 @@
 		C8FE62BE2973F1C200FB0B7B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C8FE62CE2974098F00FB0B7B /* CityViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C8FE62BF2973F1CA00FB0B7B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		C8FE62D0297455C600FB0B7B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -208,6 +219,7 @@
 				C8FE62C92973FC5900FB0B7B /* WeatherDetail.swift in Sources */,
 				C86DC62A2973BF8A00B34DF8 /* ContentView.swift in Sources */,
 				C86DC6282973BF8A00B34DF8 /* WeathermanApp.swift in Sources */,
+				C8FE62CF2974098F00FB0B7B /* CityViewViewModel.swift in Sources */,
 				C8FE62C72973FC4A00FB0B7B /* Weather.swift in Sources */,
 				C8FE62C32973F40B00FB0B7B /* Manager.swift in Sources */,
 				C8FE62CD2973FC7000FB0B7B /* DailyWeather.swift in Sources */,
