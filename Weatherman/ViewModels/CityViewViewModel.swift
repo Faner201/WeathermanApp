@@ -47,7 +47,7 @@ final class CityViewViewModel: ObservableObject {
         if weather.current.weather.count > 0 {
             return weather.current.weather[0].icon
         }
-        return "sun.max.fill"
+        return "dayClearSky"
     }
     
     var temperature: String {
@@ -62,7 +62,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var windSpeed: String {
-        return String(format: "%0.1f", weather.current.windSpeed)
+        return String(format: "%0.1f", converWindSpeed(speed: weather.current.windSpeed))
     }
     
     var humidity: String {
@@ -73,8 +73,16 @@ final class CityViewViewModel: ObservableObject {
         return String(format: "%0.0f%%", weather.current.dewPoint)
     }
     
+    func convertTemp(temp: Double) -> Double {
+        return (temp - 32 / 1.8)
+    }
+    
+    func converWindSpeed(speed: Double) -> Double {
+        return speed * 1.609344
+    }
+    
     func getTemp(temp: Double) -> String {
-        return String(format: "0.1f", temp)
+        return String(format: "0.1f", convertTemp(temp: temp))
     }
     
     func getTime(timestmap: Int) -> String {
