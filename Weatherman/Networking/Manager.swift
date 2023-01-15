@@ -42,4 +42,5 @@ class Manager<T: Codable> {
                 completion(.failure(.decodingError(err: err.localizedDescription)))
             }
         }.resume()
+    }
 }
