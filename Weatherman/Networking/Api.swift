@@ -9,13 +9,13 @@ import Foundation
 
 
 struct Api {
-    static let key = "a3e389c848ef80fbef667c3668348e05"
+    static let key = "f0d7c06e2b669dbbe6e1583213c4acc0"
 }
 
 extension Api {
-    static let baseURL = "https://api.openweathermap.org/data/3.0/"
+    static let baseURL = "https://api.openweathermap.org/data/2.5/"
     
     static func getURL(lat: Double, lon: Double) -> String {
-        return "\(baseURL)oncall?lat=\(lat)&lon=\(lon)&exclude=minutely&appid=\(key)&units=imperial"
+        return "\(baseURL)onecall?lat=\(lat)&lon=\(lon)&exclude=minutely&appid=\(key)&units=imperial"
     }
 }

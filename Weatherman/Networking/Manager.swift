@@ -24,7 +24,8 @@ class Manager<T: Codable> {
                 return
             }
             
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { //здесь падает
+                print("response")
                 completion(.failure(.invaidResponse))
                 return
             }
