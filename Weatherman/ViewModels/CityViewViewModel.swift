@@ -62,7 +62,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var windSpeed: String {
-        return String(format: "%0.1f", converWindSpeed(speed: weather.current.windSpeed))
+        return String(format: "%0.1f", weather.current.windSpeed)
     }
     
     var humidity: String {
@@ -82,7 +82,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     func getTemp(temp: Double) -> String {
-        return String(format: "0.1f", convertTemp(temp: temp))
+        return String(format: "0.1f", temp)
     }
     
     func getTime(timestmap: Int) -> String {
@@ -207,7 +207,7 @@ final class CityViewViewModel: ObservableObject {
         case "50n":
             return Image(systemName: "cloud.fog.fill")
         default:
-            return Image(systemName: "sum.max.fill")
+            return Image(systemName: "sun.max.fill")
         }
     }
     
