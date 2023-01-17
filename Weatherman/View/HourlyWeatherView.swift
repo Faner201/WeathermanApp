@@ -19,12 +19,13 @@ struct HourlyWeatherView: View {
                                                      weather.weather[0].icon : "sun.max.fill")
                     let hour = cityVM.getTime(timestmap: weather.dt)
                     let temp = cityVM.getTemp(temp: weather.temp)
+                    getHourlyView(hour: hour, image: icon, temp: temp)
                 }
             }
         }
     }
         
-        private func getHourlyView(hour: String, image: Image, temp: String) {
+        private func getHourlyView(hour: String, image: Image, temp: String) -> some View {
             VStack(spacing: 20) {
                 Text(hour)
                 image

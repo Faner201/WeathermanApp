@@ -62,7 +62,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var windSpeed: String {
-        return String(format: "%0.1f", weather.current.windSpeed)
+        return String(format: "%0.1f", weather.current.wind_speed)
     }
     
     var humidity: String {
@@ -70,7 +70,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var rainChances: String {
-        return String(format: "%0.0f%%", weather.current.dewPoint)
+        return String(format: "%0.0f%%", weather.current.dew_point)
     }
     
     func convertTemp(temp: Double) -> Double {
@@ -82,7 +82,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     func getTemp(temp: Double) -> String {
-        return String(format: "0.1f", temp)
+        return String(format: "%0.1f", temp)
     }
     
     func getTime(timestmap: Int) -> String {
@@ -95,8 +95,8 @@ final class CityViewViewModel: ObservableObject {
     
     private func getLocation() {
         CLGeocoder().geocodeAddressString(city) {
-            (placemaks, error) in
-            if let places = placemaks, let place = places.first {
+            (placemarks, error) in
+            if let places = placemarks, let place = places.first {
                 self.getWeather(coord: place.location?.coordinate)
             }
         }
